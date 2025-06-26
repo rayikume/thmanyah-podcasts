@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <>
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#101010] to-[#0c0f1a]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#101010] to-[#131829]" />
         <canvas
           ref={canvasRef}
           className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-10"
