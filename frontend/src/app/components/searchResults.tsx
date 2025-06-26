@@ -15,7 +15,7 @@ export default function SearchResults({ results }: Props) {
       {results.map((item) => (
         <div
           key={item.trackId}
-          className="border-2 rounded-lg p-4 shadow hover:shadow-md transition"
+          className="border-2 rounded-lg p-4 shadow hover:shadow-md transition cursor-pointer hover:bg-[#000000]/45"
         >
           <img
             src={item.artworkUrl}
