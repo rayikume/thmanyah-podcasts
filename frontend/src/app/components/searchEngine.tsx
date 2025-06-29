@@ -21,7 +21,9 @@ export default function SearchEnginePage() {
     setHasSearched(true);
     try {
       const response = await fetch(
-        `http://localhost:3000/search?term=${encodeURIComponent(term)}`
+        `https://thmanyahapis.onrender.com/search?term=${encodeURIComponent(
+          term
+        )}`
       );
       const data = await response.json();
       setResults(data);
