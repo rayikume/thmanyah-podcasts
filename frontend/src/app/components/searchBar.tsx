@@ -8,9 +8,10 @@ const ibmPlexArabic = Baloo_Bhaijaan_2({
 
 type Props = {
   onSearch: (term: string) => void;
+  isLoading?: boolean;
 };
 
-export default function SearchBar({ onSearch }: Props) {
+export default function SearchBar({ onSearch, isLoading }: Props) {
   const [term, setTerm] = useState("");
 
   const handleClick = () => {
@@ -21,7 +22,11 @@ export default function SearchBar({ onSearch }: Props) {
     <div className="mt-15 flex gap-2 mb-6">
       <button
         onClick={handleClick}
-        className={`bg-[#ffffff]/12 flex-2 backdrop-blur-md text-white px-2 py-3 rounded-[7px] hover:bg-[#e7e7e7] hover:text-black md:hover:flex-3 transition-all hover:bg-gradient-to-tl hover:from-pink-400 hover:to-orange-400 ${ibmPlexArabic.className} font-bold text-xl cursor-pointer`}
+        className={`bg-[#ffffff]/12 flex-2 backdrop-blur-md text-white px-2 py-3 rounded-[7px] hover:bg-[#e7e7e7] hover:text-black md:hover:flex-3 transition-all hover:bg-gradient-to-tl hover:from-pink-400 hover:to-orange-400 ${
+          ibmPlexArabic.className
+        } font-bold text-xl cursor-pointer ${
+          isLoading ? "opacity-50 cursor-not-allowed" : ""
+        }`}
       >
         ابحث
       </button>
