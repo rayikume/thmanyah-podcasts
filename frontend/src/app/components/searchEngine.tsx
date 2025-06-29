@@ -36,7 +36,7 @@ export default function SearchEnginePage() {
   };
 
   return (
-    <div className="p-8">
+    <div className="sm:p-8 pl-2 pr-2">
       <div className="max-w-4xl mx-auto">
         <SearchBar onSearch={handleSearch} isLoading={loading} />
       </div>
