@@ -11,11 +11,11 @@ const ibmPlexArabic = Baloo_Bhaijaan_2({
 
 export default function SearchResults({ results }: Props) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-15">
+    <div className="flex flex-col sm:overflow-x-scroll sm:custom-scrollbar sm:flex-row-reverse gap-6 sm:ml-12 sm:mr-12 sm:pb-7">
       {results.map((item) => (
         <div
           key={item.trackId}
-          className="border-2 rounded-lg p-4 shadow hover:shadow-md transition cursor-pointer hover:bg-[#000000]/45"
+          className="sm:max-w-[350px] sm:max-h-[450px] sm:border-none border-1 border-[#69696928] flex-shrink-0 rounded-lg p-4 shadow hover:shadow-sm transition cursor-pointer hover:bg-[#000000]/45"
         >
           <img
             src={item.artworkUrl}
