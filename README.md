@@ -1,4 +1,4 @@
-## ThmanyahAPIs
+## Description
 
 Discover and browse iTunes podcast catalogues with a modern web UI. This monorepo contains a Next.js frontend and a NestJS backend that fetches data from the iTunes Search API and persists results in PostgreSQL via Prisma.
 
